@@ -64,7 +64,7 @@ public class Battery
 //findBestColumn
 
 
-//assignElevatorS
+//assignElevator
 
 }
 //Console.WriteLine(val1 + val2);

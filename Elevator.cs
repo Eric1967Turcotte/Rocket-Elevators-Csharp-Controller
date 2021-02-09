@@ -21,6 +21,10 @@ public class Elevator
 
 //move
 
+   public void Move(){
+
+   }
+
 //sortFloorList
 
 //operateDoors (move to Door)
