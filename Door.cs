@@ -12,4 +12,5 @@ public class Door
         this.ID = id;
         this.status = status;
     }
+    
 }

@@ -35,9 +35,23 @@ public class Battery
  
 //methods=========================
 
-    //Create Basement Column
+    //Create Basement Column Method
 
-    
+    static void createBasementColumn(int amountOfColumn, int amountOfFloors, int amountOfBasements, int amountOfElevatorPerColumn)
+    {
+        List<int> servedFloors = new List<int>();
+        this.floor = -1;
+
+        foreach (amountOfBasements)
+            floor.add( new servedFloors()); // (new servedFloors(floor++))???
+                // decrement floor
+
+        this.column = new Column(int columnID, string "online", int amountOfBasements, int amountOfElevatorPerColumn, int servedFloors)
+            column.add(this.columnList)//???
+                // columnID++;
+    //END Create Basement Column Method
+
+    }
 
 
 }
