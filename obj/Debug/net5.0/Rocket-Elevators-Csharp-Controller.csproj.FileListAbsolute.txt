@@ -1,0 +1,16 @@
+C:\Users\Eric\OneDrive\Bureau\Odyssey\Week-tree(3)\C-Sharp\Rocket-Elevators-Csharp-Controller\bin\Debug\net5.0\Rocket-Elevators-Csharp-Controller.exe
+C:\Users\Eric\OneDrive\Bureau\Odyssey\Week-tree(3)\C-Sharp\Rocket-Elevators-Csharp-Controller\bin\Debug\net5.0\Rocket-Elevators-Csharp-Controller.deps.json
+C:\Users\Eric\OneDrive\Bureau\Odyssey\Week-tree(3)\C-Sharp\Rocket-Elevators-Csharp-Controller\bin\Debug\net5.0\Rocket-Elevators-Csharp-Controller.runtimeconfig.json
+C:\Users\Eric\OneDrive\Bureau\Odyssey\Week-tree(3)\C-Sharp\Rocket-Elevators-Csharp-Controller\bin\Debug\net5.0\Rocket-Elevators-Csharp-Controller.runtimeconfig.dev.json
+C:\Users\Eric\OneDrive\Bureau\Odyssey\Week-tree(3)\C-Sharp\Rocket-Elevators-Csharp-Controller\bin\Debug\net5.0\Rocket-Elevators-Csharp-Controller.dll
+C:\Users\Eric\OneDrive\Bureau\Odyssey\Week-tree(3)\C-Sharp\Rocket-Elevators-Csharp-Controller\bin\Debug\net5.0\ref\Rocket-Elevators-Csharp-Controller.dll
+C:\Users\Eric\OneDrive\Bureau\Odyssey\Week-tree(3)\C-Sharp\Rocket-Elevators-Csharp-Controller\bin\Debug\net5.0\Rocket-Elevators-Csharp-Controller.pdb
+C:\Users\Eric\OneDrive\Bureau\Odyssey\Week-tree(3)\C-Sharp\Rocket-Elevators-Csharp-Controller\obj\Debug\net5.0\Rocket-Elevators-Csharp-Controller.csprojAssemblyReference.cache
+C:\Users\Eric\OneDrive\Bureau\Odyssey\Week-tree(3)\C-Sharp\Rocket-Elevators-Csharp-Controller\obj\Debug\net5.0\Rocket-Elevators-Csharp-Controller.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eric\OneDrive\Bureau\Odyssey\Week-tree(3)\C-Sharp\Rocket-Elevators-Csharp-Controller\obj\Debug\net5.0\Rocket-Elevators-Csharp-Controller.AssemblyInfoInputs.cache
+C:\Users\Eric\OneDrive\Bureau\Odyssey\Week-tree(3)\C-Sharp\Rocket-Elevators-Csharp-Controller\obj\Debug\net5.0\Rocket-Elevators-Csharp-Controller.AssemblyInfo.cs
+C:\Users\Eric\OneDrive\Bureau\Odyssey\Week-tree(3)\C-Sharp\Rocket-Elevators-Csharp-Controller\obj\Debug\net5.0\Rocket-Elevators-Csharp-Controller.csproj.CoreCompileInputs.cache
+C:\Users\Eric\OneDrive\Bureau\Odyssey\Week-tree(3)\C-Sharp\Rocket-Elevators-Csharp-Controller\obj\Debug\net5.0\Rocket-Elevators-Csharp-Controller.dll
+C:\Users\Eric\OneDrive\Bureau\Odyssey\Week-tree(3)\C-Sharp\Rocket-Elevators-Csharp-Controller\obj\Debug\net5.0\ref\Rocket-Elevators-Csharp-Controller.dll
+C:\Users\Eric\OneDrive\Bureau\Odyssey\Week-tree(3)\C-Sharp\Rocket-Elevators-Csharp-Controller\obj\Debug\net5.0\Rocket-Elevators-Csharp-Controller.pdb
+C:\Users\Eric\OneDrive\Bureau\Odyssey\Week-tree(3)\C-Sharp\Rocket-Elevators-Csharp-Controller\obj\Debug\net5.0\Rocket-Elevators-Csharp-Controller.genruntimeconfig.cache
