@@ -7,15 +7,15 @@ public class Elevator
    public int amountOfFloors;
    public string direction;
    public int currentFloor;
-   public int Door; // verifier car Object
-   public List<floorRequestList>;// a verifer List
+   public int Door; 
+   public List<floorRequest> floorRequestList; //??
 
-   public Elevator(int _id, string _status, int _amountOfFloors, int _currentFloor)
+   public Elevator(int id, string status, int amountOfFloors, int currentFloor)
    {
-       this.ID = _id;
-       this.status = _status;
-       this.amountOfFloors = _amountOfFloors;
-       this.currentFloor = _currentFloor;
+       this.ID = id;
+       this.status = status;
+       this.amountOfFloors = amountOfFloors;
+       this.currentFloor = currentFloor;
 
    }
 

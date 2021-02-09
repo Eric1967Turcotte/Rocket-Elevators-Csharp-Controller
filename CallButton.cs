@@ -7,12 +7,12 @@ public class CallButton
    public int floor;
    public string direction;
 
-   public CallButton(int _id, string _status, int _floor, string _direction)
+   public CallButton(int id, string status, int floor, string direction)
    {
-       this.ID = _id;
-       this.status = _status;
-       this.floor = _floor;
-       this.direction = _direction;
+       this.ID = id;
+       this.status = status;
+       this.floor = floor;
+       this.direction = direction;
 
 
    } 

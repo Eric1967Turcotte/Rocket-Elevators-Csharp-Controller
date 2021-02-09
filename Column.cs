@@ -10,12 +10,16 @@ public class Column
    public List<CallButton> callButtonsList;
    public List<FloorRequestButton> floorRequestButtonsList;
 
-   public Column(int _id, string _status, int _amountOfFloors, int _amountOfElevators, int _servedFloors, int _isBasement)
+   public Column(int id, string status, int amountOfFloors, int amountOfElevators, int servedFloors, int isBasement)
    {
-       this.ID = _id;
-       this.status = _status;
-       this.amountOfFloors = _amountOfFloors;
-       this.amountOfElevator = _amountOfElevators;
+       this.ID = id;
+       this.status = status;
+       this.amountOfFloors = amountOfFloors;
+       this.amountOfElevator = amountOfElevators;
+       this.elevatorsList = new List<Elevator>();
+       this.callButtonsList = new List<CallButton>();
+       this.floorRequestButtonsList = new List<FloorRequestButton>();
+       
        
    }
 
