@@ -24,6 +24,19 @@ public class Column
        
    }
 }
+
+//createCallButtons
+
+//createElevators
+
+//requestElevator
+
+//findElevator
+
+//checkIfElevatorIsBetter
+
+
+
 }
 //Console.WriteLine(val1 + val2);
    //Console.WriteLine(val1 < val2);

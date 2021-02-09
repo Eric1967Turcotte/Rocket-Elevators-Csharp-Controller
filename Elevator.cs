@@ -19,6 +19,14 @@ public class Elevator
 
    }
 
+//move
+
+//sortFloorList
+
+//operateDoors (move to Door)
+
+
+
 }
 //Console.WriteLine(val1 + val2);
    //Console.WriteLine(val1 < val2);
