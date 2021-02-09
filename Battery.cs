@@ -14,7 +14,7 @@ public class Battery
     public int amountOfBasements;
     public int columnID;
     public List<Column> columnsList;
-    public List<FloorRequestButton> floorRequestButtonsList;
+    //public List<FloorRequestButton> floorRequestButtonsList;
         private object column;
 
         public Battery(int id, int amountOfColumns, string status, int amountOfFloors, int amountOfBasements, int amountOfElevatorPerColumn)
@@ -25,7 +25,8 @@ public class Battery
         this.amountOfFloors = amountOfFloors;
         this.amountOfBasements = amountOfBasements;
         this.columnsList = new List<Column>();
-        this.floorRequestButtonsList = new List<FloorRequestButton>();
+        this.columnsList.Add(new Column(1,"status", 1,1,1,true));
+        //this.floorRequestButtonsList = new List<FloorRequestButton>();
         this.columnID = 1;
 
     }
@@ -34,8 +35,8 @@ public class Battery
 
     public void assignElevator(int requestedFloor, string direction)
     {
-       ref.column = this.findBestColumn(int requestedFloor)
-            return column
+       //ref.column = this.findBestColumn(int requestedFloor)
+         //   return column
     }   
 
     //findBestColumn(requestedFloor)
@@ -55,11 +56,10 @@ public class Battery
 
     //END Create Basement Column Method
 
-//Console.WriteLine(val1 + val2);
-   //Console.WriteLine(val1 < val2);
-   //Console.WriteLine(!(status));
-   //Console.ReadKey();
+// Console.WriteLine(val1 + val2);
+//    Console.WriteLine(val1 < val2);
+//    Console.WriteLine(!(status));
+//    Console.ReadKey();
 
-
-    } 
+     } 
   }

@@ -1,30 +1,30 @@
-using System;
-using System.Linq;
-using System.Collections;
-using System.Collections.Generic;
+// using System;
+// using System.Linq;
+// using System.Collections;
+// using System.Collections.Generic;
 
-namespace Rocket_Elevators_Csharp_Controller
-{
+// namespace Rocket_Elevators_Csharp_Controller
+// {
 
-public class CallButton
-{
-   public int ID;
-   public string status;
-   public int floor;
-   public string direction;
+// public class CallButton
+// {
+//    public int ID;
+//    public string status;
+//    public int floor;
+//    public string direction;
 
-   public CallButton(int id, string status, int floor, string direction)
-   {
-       this.ID = id;
-       this.status = status;
-       this.floor = floor;
-       this.direction = direction;
+//    public CallButton(int id, string status, int floor, string direction)
+//    {
+//        this.ID = id;
+//        this.status = status;
+//        this.floor = floor;
+//        this.direction = direction;
 
 
-   } 
-}
-}
-//Console.WriteLine(val1 + val2);
-   //Console.WriteLine(val1 < val2);
-   //Console.WriteLine(!(status));
-   //Console.ReadKey();
+//    } 
+// }
+// }
+// //Console.WriteLine(val1 + val2);
+//    //Console.WriteLine(val1 < val2);
+//    //Console.WriteLine(!(status));
+//    //Console.ReadKey();
