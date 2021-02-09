@@ -20,3 +20,7 @@ public class Elevator
    }
 
 }
+//Console.WriteLine(val1 + val2);
+   //Console.WriteLine(val1 < val2);
+   //Console.WriteLine(!(status));
+   //Console.ReadKey();

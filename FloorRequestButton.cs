@@ -1,4 +1,5 @@
-
+namespace Rocket_Elevators_Csharp_Controller
+{
 
 public class FloorRequestButton
 {
@@ -15,3 +16,8 @@ public class FloorRequestButton
         this.direction = direction;
     }
 }
+}
+//Console.WriteLine(val1 + val2);
+   //Console.WriteLine(val1 < val2);
+   //Console.WriteLine(!(status));
+   //Console.ReadKey();

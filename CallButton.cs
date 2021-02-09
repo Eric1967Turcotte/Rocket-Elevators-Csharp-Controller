@@ -1,4 +1,5 @@
-
+namespace Rocket_Elevators_Csharp_Controller
+{
 
 public class CallButton
 {
@@ -17,3 +18,8 @@ public class CallButton
 
    } 
 }
+}
+//Console.WriteLine(val1 + val2);
+   //Console.WriteLine(val1 < val2);
+   //Console.WriteLine(!(status));
+   //Console.ReadKey();

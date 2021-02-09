@@ -1,4 +1,5 @@
-
+namespace Rocket_Elevators_Csharp_Controller
+{
 
 public class Battery
 {
@@ -52,6 +53,10 @@ public class Battery
     //END Create Basement Column Method
 
     }
-
+}
 
 }
+//Console.WriteLine(val1 + val2);
+   //Console.WriteLine(val1 < val2);
+   //Console.WriteLine(!(status));
+   //Console.ReadKey();
