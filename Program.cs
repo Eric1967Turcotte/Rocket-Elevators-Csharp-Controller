@@ -11,6 +11,11 @@ namespace Rocket_Elevators_Csharp_Controller
     {
         static void Main(string[] args)
         {
+
+            //var battery = new Battery (1, "online", 4, 60, 6);
+            //Console.WriteLine(battery.columnsList{1}.servedFloors.Count);
+            //Console.WriteLine("Hello World");
+
            // Battery battery = new Battery(1, "online", 4, 60, 6, 5);
            // System.Console.WriteLine(battery);
 

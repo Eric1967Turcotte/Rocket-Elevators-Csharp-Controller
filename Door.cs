@@ -18,8 +18,8 @@ using System.Diagnostics;
         }
         public void operateDoors()
         {
-            this.status = "open";
-            this.status = "close";
+            status = "open";
+            status = "close";
         }
     }
 }
