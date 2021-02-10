@@ -1,30 +1,26 @@
-// using System;
-// using System.Linq;
-// using System.Collections;
-// using System.Collections.Generic;
+/*  using System;
+using System.Linq;
+using System.Collections;
+using System.Collections.Generic;
+using System.Diagnostics;
 
-// namespace Rocket_Elevators_Csharp_Controller
-// {
+ namespace Rocket_Elevators_Csharp_Controller
+ {
 
-// public class Door
-// {
-//    public int ID;
-//    public string status;
+    public class Doors
+    {
+        public int ID;
+        public string status;
 
-//    public Door(int id, string status) {
-
-//         this.ID = id;
-//         this.status = status;
-//     }
-//     //Methods operate door???
-//     public void operateDoors(string status)
-//     {
-        
-//     }
-    
-// }
-// }
-// //Console.WriteLine(val1 + val2);
-//    //Console.WriteLine(val1 < val2);
-//    //Console.WriteLine(!(status));
-//    //Console.ReadKey();
+        public Doors(int _id, string _status)
+        {
+            ID = _id;
+            status = _status;
+        }
+        public void doorsInstructions()
+        {
+            this.status = "open";
+            this.status = "close";
+        }
+    }
+} */

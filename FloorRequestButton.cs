@@ -1,26 +1,32 @@
-// using System;
-// using System.Linq;
-// using System.Collections;
-// using System.Collections.Generic;
-// namespace Rocket_Elevators_Csharp_Controller
-// {
 
-// public class FloorRequestButton
-// {
-//     public int ID;
-//     public string status;
-//     public int floor;
-//     public string direction;
-    
-//     public FloorRequestButton(int id, string status, int floor, string direction)
-//     {
-//         this.ID = id;
-//         this.status = status;
-//         this.floor = floor;
-//         this.direction = direction;
-//     }
-// }
-// }
+/*  
+using System;
+using System.Linq;
+using System.Collections;
+using System.Collections.Generic;
+using System.Diagnostics;
+
+namespace Rocket_Elevators_Csharp_Controller
+ {
+
+
+    public class FloorRequestButton
+    {
+        public int ID;
+        public string status;
+        public int floor;
+        public string direction;
+
+        public FloorRequestButton(int _id, string _status, int _floor, string _direction)
+        {
+            this.ID = _id;
+            this.status = _status;
+            this.floor = _floor;
+            this.direction = _direction;
+        }
+    }
+}
+*/
 // //Console.WriteLine(val1 + val2);
 //    //Console.WriteLine(val1 < val2);
 //    //Console.WriteLine(!(status));
