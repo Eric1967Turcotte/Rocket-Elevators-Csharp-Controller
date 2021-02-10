@@ -1,4 +1,4 @@
-/*  using System;
+using System;
 using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Diagnostics;
  namespace Rocket_Elevators_Csharp_Controller
  {
 
-    public class Doors
+      public class Doors
     {
         public int ID;
         public string status;
@@ -23,4 +23,4 @@ using System.Diagnostics;
             this.status = "close";
         }
     }
-} */
+} 

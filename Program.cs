@@ -1,19 +1,28 @@
 ﻿using System;
-//using System.Linq;
-//using System.Collections;
-//using System.Collections.Generic;
-//using System.Diagnostics;
+using System.Linq;
+using System.Collections;
+using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace Rocket_Elevators_Csharp_Controller
-{
+{ 
+          [DebuggerDisplay("{" + nameof(GetDebuggerDisplay) + "(),nq}")]
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Battery battery = new Battery(2,2,"yeah",2,2,2);
-            Console.WriteLine(battery.ID);
-            Console.WriteLine(battery.columnsList[0].ID);
+            Battery battery = new Battery(1, "online", 4, 60, 6, 5);
+            System.Console.WriteLine(battery);
+        }
+
+        private string GetDebuggerDisplay()
+        {
+            return ToString();
         }
     }
 }
+
+            //Console.WriteLine("Hello World!");
+            //Battery battery = new Battery(2,2,"yeah",2,2,2);
+            //Console.WriteLine(battery.ID);
+            //Console.WriteLine(battery.columnsList[0].ID);
