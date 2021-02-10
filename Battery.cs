@@ -15,7 +15,7 @@ public class Battery
     public int columnID;
     public List<Column> columnsList;
     //public List<FloorRequestButton> floorRequestButtonsList;
-        private object column;
+      
 
         public Battery(int id, int amountOfColumns, string status, int amountOfFloors, int amountOfBasements, int amountOfElevatorPerColumn)
     {
@@ -24,11 +24,13 @@ public class Battery
         this.status = status;
         this.amountOfFloors = amountOfFloors;
         this.amountOfBasements = amountOfBasements;
+        this.amountOfElevatorPerColumn =amountOfElevatorPerColumn;
+
+
         this.columnsList = new List<Column>();
         this.columnsList.Add(new Column(1,"status", 1,1,1,true));
         //this.floorRequestButtonsList = new List<FloorRequestButton>();
         this.columnID = 1;
-
     }
 
      // Method assignElevator(requestedFloor, direction)
