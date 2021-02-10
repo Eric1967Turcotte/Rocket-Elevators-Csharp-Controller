@@ -74,7 +74,6 @@ namespace Rocket_Elevators_Csharp_Controller
             // return floorRequestList;
         }
     }
-
 }
 // }
 // //Console.WriteLine(val1 + val2);

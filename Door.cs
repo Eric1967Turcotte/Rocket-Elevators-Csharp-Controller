@@ -6,8 +6,7 @@ using System.Diagnostics;
 
  namespace Rocket_Elevators_Csharp_Controller
  {
-
-      public class Doors
+    public class Doors
     {
         public int ID;
         public string status;
@@ -17,10 +16,10 @@ using System.Diagnostics;
             ID = _id;
             status = _status;
         }
-        public void doorsInstructions()
+        public void operateDoors()
         {
             this.status = "open";
             this.status = "close";
         }
     }
-} 
+}

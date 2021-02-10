@@ -6,7 +6,7 @@ using System.Diagnostics;
 
  namespace Rocket_Elevators_Csharp_Controller
 {
-     public class CallButton
+    public class CallButton
     {
         public int ID;
         public string status;
@@ -23,7 +23,6 @@ using System.Diagnostics;
 
     }
 }
-
 // //Console.WriteLine(val1 + val2);
 //    //Console.WriteLine(val1 < val2);
 //    //Console.WriteLine(!(status));
