@@ -74,7 +74,8 @@ namespace Rocket_Elevators_Csharp_Controller
             elevator.floorRequestList.Add(userPosition);
             elevator.SortFloorList();
             elevator.Move();
-            Doors.operateDoors();
+
+             //Doors.operateDoors();
         }
         public Elevator findElevator(int callPosition, string callDirection)
         {
@@ -137,11 +138,16 @@ namespace Rocket_Elevators_Csharp_Controller
                     {
                         bestElevatorInformation = this.checkIfElevatorIsBetter(5, elevator, bestElevatorInformation, callPosition);
                     }
-                    
+
+                    //int bestElevator = bestElevatorInformation["bestElevator"];                                                                    
+                    //int bestScore = bestElevatorInformation["bestScore"];                                                                          
+                    //int referenceGap = bestElevatorInformation["referencegap"];    
                 }
-            }
+            };
             return bestElevatorInformation["bestElevator"];    
+    
     }
+
         public Dictionary<string,dynamic> checkIfElevatorIsBetter(int scoreToCheck, Elevator newElevator, Dictionary<string, dynamic> bestElevatorInformation, int floor)
         {
             if (scoreToCheck < bestElevatorInformation["bestScore"])
@@ -150,6 +156,17 @@ namespace Rocket_Elevators_Csharp_Controller
                 bestElevatorInformation["bestElevator"] = newElevator;
                 bestElevatorInformation["referenceGap"] = (newElevator.currentFloor - floor);
             }
+            else if(bestElevatorInformation["bestscore"] == scoreToCheck)
+            {
+                int gap = Math.Abs(newElevator.currentFloor - floor);
+                if(bestElevatorInformation["referenceGap"] > gap)
+                {
+                    bestElevatorInformation["bestscore"] = scoreToCheck;
+                    bestElevatorInformation["bestElevator"] = newElevator;
+                    bestElevatorInformation["referenceGap"] = gap;  
+                }
+            }
+            return bestElevatorInformation;
         }
     }
 }

@@ -16,10 +16,10 @@ using System.Diagnostics;
             ID = _id;
             status = _status;
         }
-        public void operateDoors()
-        {
-            status = "open";
-            status = "close";
-        }
+       // public void operateDoors()
+        //
+            //status = "open";
+            //status = "close";
+        //}
     }
 }
