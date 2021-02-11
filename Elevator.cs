@@ -28,29 +28,29 @@ namespace Rocket_Elevators_Csharp_Controller
         public void Move()
         {
             
-            while (this.floorRequestList.Count != 0)                                    // execute the next operations until the floorrequest list is empty
+            while (this.floorRequestList.Count != 0)                                    
             {                                                
-            int goToFloor = this.floorRequestList [0];                                  // going to the first floor in the list
+            int goToFloor = this.floorRequestList [0];                                 
             this.status = "moving";
         
-                if (this.currentFloor < goToFloor) {                                    // instructions if the request floor is above
+                if (this.currentFloor < goToFloor) {                                  
                     this.direction = "up";
                     while (this.currentFloor < goToFloor)
                     {
-                        this.currentFloor++; // console.log("The elevator is moving up to floor",this.currentFloor + 1)
+                        this.currentFloor++; 
                     }
                 }
-                else if (this.currentFloor > goToFloor)                                // instructions if the request floor is below
+                else if (this.currentFloor > goToFloor)                                
                 {                                               
                     this.direction = "down";
                     while (this.currentFloor > goToFloor)
                     {
-                        this.currentFloor--;// console.log("The elevator is moving down to floor",this.currentFloor - 1)
+                        this.currentFloor--;
                     }
                 } 
                 else
                 {                                    
-                    this.status = "stopped";                                            // instructions when we are at the floor
+                    this.status = "stopped";                                           
                     // console.log("The elevator is",this.status,"at floor",this.currentFloor)
                     this.direction = null;
                     this.floorRequestList.RemoveAt(0);

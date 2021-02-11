@@ -30,14 +30,14 @@ namespace Rocket_Elevators_Csharp_Controller
             this.floorRequestButtonsList = new List<FloorRequestButton>();        
             this.columnID = 1;
 
-            System.Console.WriteLine($"Total column with basement = " + _amountOfColumns);     //console log *******
+            System.Console.WriteLine($"Total column with basement = " + _amountOfColumns);     
             if (_amountOfBasements > 0)
             {
                 createBasementFloorRequestButtonsList(_amountOfBasements);
                 createBasementColumn(_amountOfBasements, _amountOfElevatorPerColumn);
                 _amountOfColumns -= 1;
             }
-            System.Console.WriteLine("Total column without basement = " + _amountOfColumns);     //console log *******
+            System.Console.WriteLine("Total column without basement = " + _amountOfColumns);     
             createColumns(_amountOfColumns, _amountOfFloors, _amountOfElevatorPerColumn);
             createFloorRequestButtonsList(_amountOfFloors);
             
