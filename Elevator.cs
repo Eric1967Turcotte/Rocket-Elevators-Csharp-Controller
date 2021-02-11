@@ -70,13 +70,8 @@ namespace Rocket_Elevators_Csharp_Controller
                 floorRequestList.Sort();
                 floorRequestList.Reverse();
             }
-            System.Console.WriteLine("The floor request list: " + floorRequestList);
-            // return floorRequestList;
+            System.Console.WriteLine("The floor request list: " + floorRequestList[0]);
+            
         }
     }
 }
-// }
-// //Console.WriteLine(val1 + val2);
-//    //Console.WriteLine(val1 < val2);
-//    //Console.WriteLine(!(status));
-//    //Console.ReadKey();

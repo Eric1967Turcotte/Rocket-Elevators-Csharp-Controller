@@ -17,7 +17,7 @@ namespace Rocket_Elevators_Csharp_Controller
         public List<Column> columnsList;
         public List<FloorRequestButton> floorRequestButtonsList;
         public List<int> servedFloorsList;
-        public List<int> servedFloors;
+        public static List<int> servedFloors;
 
         public Battery(int _id, string _status, int _amountOfColumns, int _amountOfFloors, int _amountOfBasements, int _amountOfElevatorPerColumn)
         {
@@ -27,8 +27,7 @@ namespace Rocket_Elevators_Csharp_Controller
             this.amountOfFloors = _amountOfFloors;
             this.amountOfBasements = _amountOfBasements;
             this.columnsList = new List<Column>();
-            this.floorRequestButtonsList = new List<FloorRequestButton>();
-            this.servedFloorsList = new List<int>();
+            this.floorRequestButtonsList = new List<FloorRequestButton>();        
             this.columnID = 1;
 
             System.Console.WriteLine($"Total column with basement = " + _amountOfColumns);     //console log *******
@@ -46,13 +45,15 @@ namespace Rocket_Elevators_Csharp_Controller
         public void createBasementColumn(int _amountOfBasements, int _amountOfElevatorPerColumn)
         {
             int basement = -1;
-            for (int i = 1; i <= _amountOfBasements; i++)
-            // List<int> servedFloors = new List<int>();
+            for (int i = 0; i < _amountOfBasements; i++)
+            
             {   
-                servedFloorsList.Add(basement);
+                servedFloors = new List<int>();
+                servedFloors.Add(basement);
                 basement -= 1;
             }
-            
+            servedFloors.Add(1);
+            servedFloors.Sort();
             Column column = new Column(columnID, "online", _amountOfBasements, _amountOfElevatorPerColumn, servedFloorsList, true);
             columnsList.Add(column);
             columnID += 1;
@@ -60,22 +61,23 @@ namespace Rocket_Elevators_Csharp_Controller
         public void createColumns(int _amountOfColumns, int _amountOfFloors, int _amountOfElevatorPerColumn)
         
         {
-        //     double aOfPc = (_amountOfFloors/_amountOfColumns);
-        //     double amountOfFloorsPerColumn = Math.Ceiling(aOfPc);
+        
             int amountOfFloorsPerColumn = (int)Math.Ceiling((double)_amountOfFloors / _amountOfColumns);
             int floor = 1;
                         
-            for (int i  = 1; i <= _amountOfColumns; i++)
+            for (int i  = 0; i < _amountOfColumns; i++)
             {
-                // List<int> servedFloors = new List<int>();
-                for (int j = 1; j <= amountOfFloorsPerColumn; j++)
+                servedFloors = new List<int>();
+                for (int j = 0; j < amountOfFloorsPerColumn; j++)
                 {
                     if (floor <= _amountOfFloors)
                     {
-                        servedFloorsList.Add(floor);
+                        servedFloors.Add(floor);
                         floor += 1;
                     }
                 }
+                servedFloors.Add(1);
+                servedFloors.Sort();
                 Column column = new Column(columnID, "online", _amountOfFloors, _amountOfElevatorPerColumn, servedFloorsList, false);
                 columnsList.Add(column);
                 columnID += 1;
@@ -108,24 +110,28 @@ namespace Rocket_Elevators_Csharp_Controller
         public Column findBestColumn(int _requestedFloor)
         {
             Column bestColumn = null;
-            foreach (Column column in columnsList)
+            foreach (Column column in this.columnsList)
             {
                 System.Console.WriteLine("column: " + column.ID);
-                if (servedFloorsList.Contains(_requestedFloor))
+                if (column.servedFloorsList.Contains(_requestedFloor))
                 {
                     bestColumn = column;
                 }
             }
             return bestColumn;
         }
-        // public static void assignElevator(int _requestedFloor, string direction)
-        // {
-        //     var column = findBestColumn(_requestedFloor);
-        //     var elevator = Elevator.findElevator();
-        //     elevator.floorRequestList.Add(_requestedFloor);
-        //     Elevator.SortFloorList();
+        public void assignElevator(int _requestedFloor, string direction)
+        {
+            Column column = findBestColumn(_requestedFloor);
+            Elevator elevator = column.findElevator(1,direction);
+            elevator.floorRequestList.Add(_requestedFloor);
+            elevator.Move();
+            elevator.floorRequestList.Add(_requestedFloor);
+            elevator.SortFloorList();
+            elevator.Move();
 
-        // }
+        
+        }
 
     }
 }

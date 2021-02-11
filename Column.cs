@@ -17,7 +17,7 @@ namespace Rocket_Elevators_Csharp_Controller
         public List<CallButton> callButtonsList;
         public List<int> servedFloorsList;
 
-        public Column(int _id, string _status, int amountOfFloors, int amountOfElevators, List<int> servedFloorsList, bool _isBasement) 
+        public Column(int _id, string _status, int amountOfFloors, int amountOfElevators, List<int> servedFloors, bool _isBasement) 
         {
             this.ID = _id;
             this.status = _status;
@@ -25,7 +25,7 @@ namespace Rocket_Elevators_Csharp_Controller
             this.amountOfElevators = amountOfElevators;
             this.elevatorsList = new List<Elevator>();
             this.callButtonsList = new List<CallButton>();
-            // var servedFloorsList = new List<int>(){_servedFloors};
+            this.servedFloorsList = new List<int>(Battery.servedFloors);
 
             createElevators(amountOfFloors, amountOfElevators);
             createCallButtons(amountOfFloors, _isBasement);
@@ -81,7 +81,7 @@ namespace Rocket_Elevators_Csharp_Controller
         {
             var bestElevatorInformation = new Dictionary<string, dynamic>(){
                 {"bestElevator", 0},
-                {"bestscore", 6}, 
+                {"bestScore", 6}, 
                 {"referenceGap", 100000}    
             };
             if (callPosition == 1)
@@ -139,9 +139,7 @@ namespace Rocket_Elevators_Csharp_Controller
                         bestElevatorInformation = this.checkIfElevatorIsBetter(5, elevator, bestElevatorInformation, callPosition);
                     }
 
-                    //int bestElevator = bestElevatorInformation["bestElevator"];                                                                    
-                    //int bestScore = bestElevatorInformation["bestScore"];                                                                          
-                    //int referenceGap = bestElevatorInformation["referencegap"];    
+                      
                 }
             };
             return bestElevatorInformation["bestElevator"];    
@@ -152,16 +150,16 @@ namespace Rocket_Elevators_Csharp_Controller
         {
             if (scoreToCheck < bestElevatorInformation["bestScore"])
             {
-                bestElevatorInformation["bestscore"] = scoreToCheck;
+                bestElevatorInformation["bestScore"] = scoreToCheck;
                 bestElevatorInformation["bestElevator"] = newElevator;
                 bestElevatorInformation["referenceGap"] = (newElevator.currentFloor - floor);
             }
-            else if(bestElevatorInformation["bestscore"] == scoreToCheck)
+            else if(bestElevatorInformation["bestScore"] == scoreToCheck)
             {
                 int gap = Math.Abs(newElevator.currentFloor - floor);
                 if(bestElevatorInformation["referenceGap"] > gap)
                 {
-                    bestElevatorInformation["bestscore"] = scoreToCheck;
+                    bestElevatorInformation["bestScore"] = scoreToCheck;
                     bestElevatorInformation["bestElevator"] = newElevator;
                     bestElevatorInformation["referenceGap"] = gap;  
                 }

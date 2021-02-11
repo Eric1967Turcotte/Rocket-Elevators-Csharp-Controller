@@ -6,56 +6,50 @@ using System.Diagnostics;
 
 namespace Rocket_Elevators_Csharp_Controller
 { 
-          [DebuggerDisplay("{" + nameof(GetDebuggerDisplay) + "(),nq}")]
+         
     class Program
     {
-        static void Main(string[] args)
+
+    static void Main(string[] args)
+        {          
+             Scenario1();
+
+         
+        }
+        public static void Scenario1()
         {
 
-            //var battery = new Battery (1, "online", 4, 60, 6);
-            //Console.WriteLine(battery.columnsList{1}.servedFloors.Count);
-            //Console.WriteLine("Hello World");
+            Battery battery = new Battery(1,"online", 4, 60, 6, 5);
+            battery.columnsList[2].elevatorsList[0].currentFloor = 20;
+            battery.columnsList[2].elevatorsList[0].status = "moving";
+            battery.columnsList[2].elevatorsList[0].direction = "down";
+            battery.columnsList[2].elevatorsList[0].floorRequestList.Add(5);
 
-           // Battery battery = new Battery(1, "online", 4, 60, 6, 5);
-           // System.Console.WriteLine(battery);
+            battery.columnsList[2].elevatorsList[1].currentFloor = 3;
+            battery.columnsList[2].elevatorsList[1].status = "moving";
+            battery.columnsList[2].elevatorsList[1].direction = "up";
+            battery.columnsList[2].elevatorsList[1].floorRequestList.Add(15);
 
-            //Console.WriteLine("Hello World!");                  //TEST
-            //Column column = new Column(2,"yeah",2,2,0,true);
-            //Console.WriteLine(columnID);
-            //Console.WriteLine(battery.columnsList[0].ID);
-        }
+            battery.columnsList[2].elevatorsList[2].currentFloor = 13;
+            battery.columnsList[2].elevatorsList[2].status = "moving";
+            battery.columnsList[2].elevatorsList[2].direction = "down";
+            battery.columnsList[2].elevatorsList[2].floorRequestList.Add(1);
 
-        private string GetDebuggerDisplay()
-        {
-            return ToString();
-        }
+            battery.columnsList[2].elevatorsList[3].currentFloor = 15;
+            battery.columnsList[2].elevatorsList[3].status = "moving";
+            battery.columnsList[2].elevatorsList[3].direction = "down";
+            battery.columnsList[2].elevatorsList[3].floorRequestList.Add(2);
+
+            battery.columnsList[2].elevatorsList[4].currentFloor = 6;
+            battery.columnsList[2].elevatorsList[4].status = "moving";
+            battery.columnsList[2].elevatorsList[4].direction = "down";
+            battery.columnsList[2].elevatorsList[4].floorRequestList.Add(1);
+
+
+            battery.assignElevator(20, "up");
+
+        }           
+       
     }
-}
-
-            //Console.WriteLine("Hello World!");
-            //Battery battery = new Battery(2,2,"yeah",2,2,2);
-            //Console.WriteLine(battery.ID);
-            //Console.WriteLine(battery.columnsList[0].ID);
-
-    /*       public static void Scenario1();
-         {
-
-                    Battery battery = new Battery(1, 4, "online", 60, 5);
-                    battery.columnList[1].elevatorsList[0].currentFloor = 20;
-                    battery.columnList[1].elevatorsList[0].floorRequestButtonsList.Add(5);
-                    battery.columnList[1].elevatorsList[0].currentFloor = 20;
-                    battery.columnList[1].elevatorsList[0].floorRequestButtonsList.Add(5);
-                    battery.columnList[1].elevatorsList[0].currentFloor = 20;
-                    battery.columnList[1].elevatorsList[0].floorRequestButtonsList.Add(5);
-                    battery.columnList[1].elevatorsList[0].currentFloor = 20;
-                    battery.columnList[1].elevatorsList[0].floorRequestButtonsList.Add(5);
-                    battery.columnList[1].elevatorsList[0].currentFloor = 20;
-                    battery.columnList[1].elevatorsList[0].floorRequestButtonsList.Add(5);
-
-                    battery.assignElevator(20, "up");
-
-                    static void Main(string[] args)
-                    {
-                        Scenario1();
-                    }   
-         }      */
+  
+}           
